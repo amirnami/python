@@ -1,6 +1,18 @@
 import requests
 import math
 
+# Get a copy of the default headers 
+
+header = requests.utils.default_headers()
+header.update(
+    {
+           "User-Agent" : "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+    }
+)
+
+url = 'http://stackoverflow.com'
+response = requests.get(url, headers=header)
+
 # Displaying the Weather with Python 
 
 url = "http://api.openweathermap.org/data/2.5/weather"
