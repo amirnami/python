@@ -1,6 +1,5 @@
-proxy = {
-    "http" : "http://amirnami:66832466@78.39.195.11:3128"
-}
+import requests
+import math
 
 url = "http://api.openweathermap.org/data/2.5/weather"
 query_string = {'q' : 'Tehran,ir', 'appid' : '61f18264b1a8919cea3d08556ebe74f8'}
